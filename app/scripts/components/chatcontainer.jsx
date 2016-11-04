@@ -10,7 +10,7 @@ var MessagesComponent = React.createClass({
     };
     var Rows = this.props.messages.map(function(message) {
       return (
-        <Row key={message.id} username={message.username} time={message.time} message={message.message} />
+        <div key={message.id} username={message.username} time={message.time} message={message.message}></div>
       )
     });
 
